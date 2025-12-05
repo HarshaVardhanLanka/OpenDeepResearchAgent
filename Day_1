@@ -1,0 +1,41 @@
+Intern daily note — Research on manus.im
+Date: 13 Nov 2025
+
+What I think it is (and does)
+
+From what I can gather, manus.im is an AI‑powered workspace that helps turn messy notes, links, and documents into clean, structured write‑ups and quick answers. Think: a lightweight knowledge base + chat assistant that can summarize, draft, and organize info.
+What it’s used for
+
+Summarizing PDFs/articles and pulling key points with citations
+Turning rough notes into polished docs (briefs, PRDs, FAQs, guides)
+Asking questions over your own docs (“What changed in v2?” “Give me pros/cons”)
+Creating onboarding or team knowledge hubs from scattered files/links
+Drafting repetitive content (status updates, specs, meeting summaries)
+Who it’s for
+
+Founders/PMs doing rapid desk research or writing specs
+Ops/CS teams building internal FAQs/how‑tos
+Researchers/students needing structured summaries and references
+Small teams that don’t want a heavy wiki but need searchable, living docs
+Why it’s interesting
+
+Cuts the “copy-paste + formatting” grind by auto‑structuring content
+Chat interface for follow‑ups on your material (faster than manual search)
+Good fit for spinning up documentation from day one instead of afterthought
+Things I still want to verify
+
+Integrations (Google Drive, Notion, Slack, GitHub?) and how indexing works
+Data privacy/compliance, on‑prem or bring‑your‑own‑key options
+Export/lock‑in: can we get clean Markdown/PDF out easily?
+Pricing/seat model and rate limits for heavier use
+My quick take
+
+Looks like a pragmatic “AI knowledge + docs” tool: helpful if we need fast summaries and clean write‑ups without building a full wiki. Less fit if we require strict enterprise controls or deep workflow features from day one.
+Next steps I’d suggest
+
+Spin up a test space with 10–20 mixed docs (PDFs, notes, links) and see how well it cites and structures
+Trial a real task: “Create a 1‑page competitor brief + sources,” then iterate via chat
+Check export quality, permissions, and whether it can answer nuanced questions from our docs
+Note
+
+If I’ve got the wrong “Manus” (there’s also Manus VR gloves, different thing!), could you share the exact link you’re looking at? I’ll refine this with specifics right away.
