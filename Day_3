@@ -1,0 +1,69 @@
++-----------------------------------+
+|      Open_Deep_Research_Agent     |
+|         System Architecture       |
++-----------------------------------+
+
+[1. User Input]                  [5. Output Generation]
+   +------------+                     +------------+
+   |  You Ask   |                     | Final Answer|
+   | a Question |                     | (Report w/  |
+   | (e.g., Chat|                     |  Sources)  |
+   +------------+                     +------------+
+           |                                   ^
+           |                                   |
+           v                                   |
+[2. Agent Brain]    [3. Tools & Data]          |
+   +------------+     +------------+           |
+   | AI Thinker |<--->| Helpers:   |           |
+   | (Plans &   |     | - Web Search|           |
+   |  Decides)  |     | - Databases |           |
+   +------------+     | - APIs      |           |
+           |          +------------+           |
+           |                                   |
+           v                                   |
+[4. Processing]                                |
+   +------------+                              |
+   | Analyze &  |------------------------------+
+   | Synthesize |
+   +------------+
+
+[Feedback Loop: If more info needed, go back to Brain/Tools]
+
+Key:
+- Boxes = Main Parts (like robot body parts)
+- Arrows = How info flows (like passing a ball)
+- <---> = Back-and-forth (like talking to a friend)+-----------------------------------+
+|      Open_Deep_Research_Agent     |
+|         System Architecture       |
++-----------------------------------+
+
+[1. User Input]                  [5. Output Generation]
+   +------------+                     +------------+
+   |  You Ask   |                     | Final Answer|
+   | a Question |                     | (Report w/  |
+   | (e.g., Chat|                     |  Sources)  |
+   +------------+                     +------------+
+           |                                   ^
+           |                                   |
+           v                                   |
+[2. Agent Brain]    [3. Tools & Data]          |
+   +------------+     +------------+           |
+   | AI Thinker |<--->| Helpers:   |           |
+   | (Plans &   |     | - Web Search|           |
+   |  Decides)  |     | - Databases |           |
+   +------------+     | - APIs      |           |
+           |          +------------+           |
+           |                                   |
+           v                                   |
+[4. Processing]                                |
+   +------------+                              |
+   | Analyze &  |------------------------------+
+   | Synthesize |
+   +------------+
+
+[Feedback Loop: If more info needed, go back to Brain/Tools]
+
+Key:
+- Boxes = Main Parts (like robot body parts)
+- Arrows = How info flows (like passing a ball)
+- <---> = Back-and-forth (like talking to a friend)
