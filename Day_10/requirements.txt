@@ -1,7 +1,6 @@
 streamlit
 langgraph
 langchain
-langchain-google-genai
+langchain-openai
 tavily-python
 pypdf
-
