@@ -6,7 +6,7 @@ from graph_builder import build_graph
 # --- PAGE CONFIG ---
 st.set_page_config(
     page_title="Open Deep Research Agent",
-    page_icon="🧠",
+    page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -142,10 +142,10 @@ with st.sidebar:
 
 # --- MAIN CHAT ---
 if not st.session_state.messages:
-    st.title("🧠 Open Deep Research Agent")
+    st.title("🤖 Open Deep Research Agent")
     st.markdown("### What would you like to research today?")
 else:
-    st.caption("🧠 Open Deep Research Agent | Powered by LangGraph, OpenRouter & Tavily")
+    st.caption("🤖 Open Deep Research Agent | Powered by LangGraph, OpenRouter & Tavily")
     if st.session_state.pdf_name:
         st.info(f"📎 **Active Context:** {st.session_state.pdf_name}")
 
