@@ -1,0 +1,13 @@
+
+First clone repo
+
+now create a virtual environment in desktop for folder
+
+now  paste command:
+
+pip install -r requirements.txt
+
+now run the app
+for running app paste command:
+
+streamlit run app.py
