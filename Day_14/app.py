@@ -6,8 +6,8 @@ from graph_builder import build_graph
 # ==========================================
 # 🔐 HARDCODED API KEYS
 # ==========================================
-OPENROUTER_API_KEY = "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"  # <--- PASTE YOUR OPENROUTER KEY HERE
-TAVILY_API_KEY = "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"          # <--- PASTE YOUR TAVILY KEY HERE
+OPENROUTER_API_KEY = ""  # <--- PASTE YOUR OPENROUTER KEY HERE
+TAVILY_API_KEY = ""  # <--- PASTE YOUR TAVILY KEY HERE
 # ==========================================
 
 # --- PAGE CONFIG ---
@@ -202,4 +202,5 @@ if st.session_state.messages and st.session_state.messages[-1]["role"] == "user"
             memory.save_entry(prompt, mode, report, st.session_state.messages)
             
         except Exception as e:
+
             st.error(f"An error occurred: {e}")
