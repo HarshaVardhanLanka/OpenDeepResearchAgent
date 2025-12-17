@@ -1,0 +1,16 @@
+
+
+First clone repo
+
+now create a virtual environment in desktop for folder
+
+now  paste command:
+
+pip install -r requirements.txt
+
+now copy & paste the OpenRouter, and Tavily api keys in config.py in API keys sections
+
+now run the app
+for running app paste command:
+
+streamlit run app.py
