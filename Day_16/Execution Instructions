@@ -37,6 +37,8 @@ mongodb+srv://admin:<db_password>@cluster0.abcde.mongodb.net/?retryWrites=true&w
 Paste this into a Notepad file for later. Replace <db_password> with your actual password (remove the brackets <>).
 
 
+
+
 Phase 2: Upload to GitHub
 Sign up or Log in to GitHub.com.
 Click the + (top right) -> New Repository.
@@ -60,6 +62,8 @@ requirements.txt (The new one)
 
 Do NOT upload config.py or any .env file
 Click Commit changes.
+
+
 
 
 Phase 3: Deploy on Streamlit Cloud
