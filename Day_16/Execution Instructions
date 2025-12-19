@@ -1,1 +1,92 @@
 
+Phase 1: Create the Free Database (MongoDB)
+This is where your chat history will live so it never gets deleted.
+
+Sign Up: Go to MongoDB.com and create a free account.
+
+Create Cluster:
+
+You will see a pricing page. Select "M0 Free" (Shared).
+Provider: AWS (default is fine).
+Region: Choose one close to you (e.g., N. Virginia).
+Name: Leave as Cluster0.
+Click Create Deployment.
+
+
+Security Setup (Crucial):
+
+Username: Type admin
+Password: Type Password12345 (Or make your own, but write it down).
+Click Create Database User.
+
+Network Access (Crucial):
+
+Scroll down to "IP Access List".
+Click "Allow Access from Anywhere" (It will add 0.0.0.0/0).
+Why? Streamlit Cloud moves around the internet, so we must allow any IP to connect.
+Click Choose a connection method (or "Finish and Close").
+
+
+Get the Link:
+
+On your Dashboard, click the Connect button next to Cluster0.
+Select Drivers.
+Select Python (Version 3.6 or later).
+COPY the connection string. It looks like this:
+mongodb+srv://admin:<db_password>@cluster0.abcde.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+Paste this into a Notepad file for later. Replace <db_password> with your actual password (remove the brackets <>).
+
+
+Phase 2: Upload to GitHub
+Sign up or Log in to GitHub.com.
+Click the + (top right) -> New Repository.
+
+
+Name it deep-research-agent.
+Make it Public.
+Click Create Repository.
+Click the link that says "uploading an existing file".
+Drag and drop these files from your computer:
+
+app.py
+planner_agent.py
+searcher_agent.py
+writer_agent.py
+graph_builder.py
+utils.py
+state.py
+memory.py (The new one)
+requirements.txt (The new one)
+
+Do NOT upload config.py or any .env file
+Click Commit changes.
+
+
+Phase 3: Deploy on Streamlit Cloud
+Go to share.streamlit.io.
+Click Sign up with GitHub.
+
+Once logged in, click "New App" (Top right).
+Click "Use existing repo".
+In the "Repository" box, select your-username/deep-research-agent.
+STOP! Do not click Deploy yet.
+Click "Advanced Settings" (at the bottom of the screen).
+A popup appears. Look for the "Secrets" box.
+This is the most important step. Copy and paste the text below into that box, but replace the values with YOUR real keys and YOUR MongoDB string from Phase 1.
+
+
+toml
+
+# OpenRouter API Key
+OPENROUTER_API_KEY = "sk-or-v1-YOUR-OPENROUTER-KEY-HERE"
+
+# Tavily API Key
+TAVILY_API_KEY = "tvly-YOUR-TAVILY-KEY-HERE"
+
+# MongoDB Connection String (Paste the one you saved in Notepad)
+# Ensure the password in the link is correct!
+MONGO_URI = "mongodb+srv://admin:Password12345@cluster0.abcde.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
+
+Click Save.
+Click Deploy.
